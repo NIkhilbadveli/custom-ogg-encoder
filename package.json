@@ -14,7 +14,6 @@
     "build-wasm": "pushd c-source && ./build-wasm.sh && popd",
     "trace": "tsc --traceResolution",
     "preview": "npm run update-preview && vite preview",
-    "publish": "npm run build && npm publish",
     "test": "jest",
     "test:watch": "jest --watch",
     "update-preview": "npm run build && cp example/* dist && cp wasm/middle-layer.wasm dist"
